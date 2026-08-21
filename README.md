@@ -21,7 +21,7 @@ nothing downstream needs to know the files came from here. That holds for every
 quality lever below, including the ones that change what gets stored.
 
 This repository is the encoder and the benchmark that proves it. The CinePi
-camera application that drives it lives in **cinepi-qraw-alpha**.
+camera application that drives it lives in **cinepi-qraw**.
 
 ---
 
