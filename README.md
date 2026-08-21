@@ -123,7 +123,7 @@ Listed finest to coarsest:
 | 4 | M5 | ~6:1 | recommended working ratio |
 | 5 | M6 | ~7:1 | recommended working ratio |
 | 6 | M7 | ~8:1 | recommended for long takes |
-| 7 | M7 + band pruning | ~9:1 | Similar to M7 with slightly reduced detail|
+| 7 | M7 + band pruning | ~9:1 | similar to M7 with slightly reduced detail|
 | 8 | M8 + band pruning | ~10:1 | **the opening rung** — measured to hold every rate the interface offers |
 | 9 | M9 + band pruning | ~11:1 | reserve, entered only under measured pressure |
 | 10 | M10 + band pruning | ~12:1 | reserve, coarsest |
