@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="docs/qraw-logo.png" alt="QRAW" width="120">
+</p>
 # QRAW: Optimised VC-5/GPR For ARM
 
 A RAW video encoder for ARM. It takes Bayer frames from a sensor and writes
