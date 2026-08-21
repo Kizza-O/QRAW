@@ -1,0 +1,70 @@
+# ---------------------------------------------------------------------------
+# QRAW Encoder .gitignore
+# Keep the repo to source + docs + patches. Everything below is reproducible
+# from a build, or is a measurement of one machine on one day.
+# ---------------------------------------------------------------------------
+
+# --- build trees -----------------------------------------------------------
+build/
+builddir/
+*.o
+*.a
+*.so
+*.so.*
+*.dylib
+*.d
+CMakeCache.txt
+CMakeFiles/
+compile_commands.json
+.ninja_deps
+.ninja_log
+*.ninja
+
+# --- compiled tools that must be BUILT, not committed ----------------------
+# These link Adobe DNG SDK and GPR code. Shipping binaries pulls in
+# binary-form redistribution duties for no benefit. Build them instead.
+tools/gpr_tools
+tools/dng_validate
+tools/qraw_stats_cli
+benchmark/quant_matrix/gpr_view
+benchmark/cinepi_qraw_bench/build/
+benchmark/build/
+
+# --- large sample media ----------------------------------------------------
+# Ship the 16 MB IMX585 reference frame as a GitHub Release asset, not in git.
+*.raw16
+*.gpr
+*.dng
+*.DNG
+*.mp4
+
+# --- run state, logs, measurements -----------------------------------------
+.run.*
+.build_verified
+.static_winner_verified
+*.log
+output/logs/
+output/results/
+vc5_bench.log
+
+# --- per-camera calibration (belongs to a rig, not to the project) ---------
+cinepi_wb_base.json
+cinepi_liveview.json
+
+# --- python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- editors / OS ----------------------------------------------------------
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+
+# --- explicit keeps --------------------------------------------------------
+# .gitignore is greedy above; re-admit the things that must ship.
+!benchmark/testdata/*.log
+!benchmark/cinepi_qraw_bench/input/README.md

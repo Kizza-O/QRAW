@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+# Compatibility entry point retained for older commands and scripts.
+# Power/frequency policy is intentionally left entirely to Linux.
+if [[ $# -eq 0 ]]; then
+  echo "Usage: $0 COMMAND [ARGUMENTS...]" >&2
+  exit 2
+fi
+
+exec "$@"

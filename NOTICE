@@ -1,0 +1,41 @@
+QRAW Encoder
+Copyright 2026 Kieran Olsson
+
+This product includes software developed by third parties. See
+THIRD_PARTY_NOTICES.md for the full inventory, licence texts and a
+statement of modifications.
+
+Principal upstream components:
+
+  * GPR (General Purpose Raw) SDK
+    Copyright 2018 GoPro, Inc.
+    Licensed under Apache-2.0 OR MIT.
+    https://github.com/gopro/gpr
+    MODIFIED by this project. See third_party/gpr/CHANGES-QRAW.md.
+
+  * Adobe DNG SDK
+    Copyright 1999-2014 Adobe Systems Incorporated.
+    Licensed under the 3-clause BSD Licence.
+    Redistributed as vendored by the GPR SDK.
+
+  * Adobe XMP Core
+    Copyright 1999-2014 Adobe Systems Incorporated.
+    Licensed under the 3-clause BSD Licence.
+    Redistributed as vendored by the GPR SDK.
+
+  * cinepi-raw
+    Copyright 2022 Csaba Nagy.
+    Licensed under BSD-2-Clause.
+    https://github.com/cinepi/cinepi-raw
+    Integrated by patch. See integration/cinepi-raw/patches/.
+
+TRADEMARKS
+
+GoPro(R), GPR, Protune and GP-Log are trademarks of GoPro, Inc.
+Adobe(R) and DNG are trademarks of Adobe Inc.
+Raspberry Pi(R) is a trademark of Raspberry Pi Ltd.
+
+This project is not affiliated with, endorsed by, or sponsored by GoPro,
+Inc., Adobe Inc. or Raspberry Pi Ltd. Those names are used only to
+identify the file formats and upstream software this project reads,
+writes and builds upon, as permitted by nominative fair use.

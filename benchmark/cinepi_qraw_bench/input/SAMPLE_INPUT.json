@@ -1,0 +1,32 @@
+{
+  "source_file": "raw-12bit-GBRG.dng",
+  "source_dimensions": [
+    4024,
+    3036
+  ],
+  "crop_xywh": [
+    92,
+    438,
+    3840,
+    2160
+  ],
+  "cfa": "GBRG",
+  "storage": "little-endian uint16",
+  "active_bits": 12,
+  "min": 221,
+  "max": 4095,
+  "bytes": 16588800,
+  "sha256": "ac57b81dd7e860f4df896eecdaa2737f40ef4f7908d7ec91a2defff6b0ffb6d6",
+  "source_url": "https://github.com/yl-data/yl-data.github.io/blob/master/2201.process_raw/raw-12bit-GBRG.dng",
+  "input": "input/sample_imx585_3840x2160_gbrg_16bit.raw16",
+  "width": 3840,
+  "height": 2160,
+  "bayer": "gbrg",
+  "effective_bits": 16,
+  "source": "IMX585 (Main_CINEPI_25-04-26 C00013)",
+  "working_max": 4094,
+  "note": "16-bit linear source; GP-Log2 to 12-bit codes; /8 level-1 prescale keeps coeffs int16",
+  "benchmark_black_level": 0,
+  "benchmark_white_level": 65535,
+  "normalisation_note": "Both macOS and Pi benchmark this bundled sample with --black 0 --white 65535. Real sensor black level is capture metadata, not a platform default."
+}

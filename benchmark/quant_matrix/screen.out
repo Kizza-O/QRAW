@@ -1,0 +1,34 @@
+screening 799 tables (0 already done), 4 jobs x 1 threads
+  25/799  0.1 min elapsed, ~2.6 min left
+  50/799  0.2 min elapsed, ~2.3 min left
+  75/799  0.2 min elapsed, ~2.2 min left
+  100/799  0.3 min elapsed, ~2.0 min left
+  125/799  0.4 min elapsed, ~2.0 min left
+  150/799  0.4 min elapsed, ~1.9 min left
+  175/799  0.5 min elapsed, ~1.8 min left
+  200/799  0.6 min elapsed, ~1.7 min left
+  225/799  0.6 min elapsed, ~1.6 min left
+  250/799  0.7 min elapsed, ~1.5 min left
+  275/799  0.8 min elapsed, ~1.5 min left
+  300/799  0.8 min elapsed, ~1.4 min left
+  325/799  0.9 min elapsed, ~1.3 min left
+  350/799  1.0 min elapsed, ~1.2 min left
+  375/799  1.0 min elapsed, ~1.2 min left
+  400/799  1.1 min elapsed, ~1.1 min left
+  425/799  1.2 min elapsed, ~1.0 min left
+  450/799  1.2 min elapsed, ~1.0 min left
+  475/799  1.3 min elapsed, ~0.9 min left
+  500/799  1.4 min elapsed, ~0.8 min left
+  525/799  1.4 min elapsed, ~0.7 min left
+  550/799  1.5 min elapsed, ~0.7 min left
+  575/799  1.6 min elapsed, ~0.6 min left
+  600/799  1.6 min elapsed, ~0.5 min left
+  625/799  1.7 min elapsed, ~0.5 min left
+  650/799  1.7 min elapsed, ~0.4 min left
+  675/799  1.8 min elapsed, ~0.3 min left
+  700/799  1.9 min elapsed, ~0.3 min left
+  725/799  1.9 min elapsed, ~0.2 min left
+  750/799  2.0 min elapsed, ~0.1 min left
+  775/799  2.0 min elapsed, ~0.1 min left
+  799/799  2.1 min elapsed, ~0.0 min left
+done in 2.1 min -> screen.csv

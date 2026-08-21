@@ -1,0 +1,4 @@
+[submodule "benchmark/third_party/gpr"]
+	path = benchmark/third_party/gpr
+	url = https://github.com/Kizza-O/gpr-qraw.git
+	branch = qraw

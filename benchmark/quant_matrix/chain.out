@@ -1,0 +1,17 @@
+=== waiting for Stage A ===
+Stage A finished at 05:26:45, 75 rows
+
+=== regenerating matrix with complete Stage A sensitivity ===
+799 unique quant tables -> matrix.json
+  hh         40
+  hh1prune   24
+  mix        720
+  rd         15
+
+=== smoke test: 4 tables through the direct screening path ===
+screening 4 tables (0 already done), 2 jobs x 2 threads
+  4/4  0.0 min elapsed, ~0.0 min left
+done in 0.0 min -> screen.csv
+smoke test produced 0/4 good rows
+CHAIN FAILED: direct vc5_bench --save-gpr screening does not work.
+Falling back would cost 2.4 h for 794 tables; stopping for a decision.

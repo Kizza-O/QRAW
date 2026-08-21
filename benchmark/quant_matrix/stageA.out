@@ -1,0 +1,89 @@
+[04:59:48] Stage A: 54 cells, base m7 = [1, 14, 14, 8, 26, 26, 18, 126, 126, 175]
+[04:59:48]          + an E0 control every 10 cells (drift check)
+[05:00:10]   A_b1_q00056                  fps=  54.50 ratio=7.495 rmse=33.40 psnr12=41.77  (22s)
+[05:00:10]   .. A_b1_q00056: spread 3.800 too wide, re-measuring
+[05:00:31]   A_b1_q00056_rm               fps=  59.10 ratio=7.495  (21s)
+[05:00:53]   A_b1_q00084                  fps=  57.90 ratio=7.523 rmse=33.90 psnr12=41.64  (22s)
+[05:01:15]   A_b1_q32767                  fps=  57.30 ratio=7.577 rmse=61.00 psnr12=36.54  (22s)
+[05:01:37]   A_b2_q00021                  fps=  56.70 ratio=7.431 rmse=32.70 psnr12=41.95  (22s)
+[05:01:59]   A_b2_q00028                  fps=  54.20 ratio=7.455 rmse=32.80 psnr12=41.93  (22s)
+[05:01:59]   .. A_b2_q00028: spread 4.400 too wide, re-measuring
+[05:02:20]   A_b2_q00028_rm               fps=  57.00 ratio=7.455  (21s)
+[05:02:42]   A_b2_q00042                  fps=  58.50 ratio=7.488 rmse=33.10 psnr12=41.85  (22s)
+[05:03:04]   A_b2_q00056                  fps=  56.10 ratio=7.512 rmse=33.50 psnr12=41.74  (22s)
+[05:03:04]   .. A_b2_q00056: spread 3.000 too wide, re-measuring
+[05:03:25]   A_b2_q00056_rm               fps=  59.40 ratio=7.512  (21s)
+[05:03:48]   A_ctl_010                    fps=  53.90 ratio=7.389 rmse=32.60 psnr12=41.98  (22s)
+[05:04:10]   A_b2_q00084                  fps=  56.70 ratio=7.544 rmse=34.20 psnr12=41.56  (22s)
+[05:04:32]   A_b2_q32767                  fps=  56.70 ratio=7.620 rmse=76.90 psnr12=34.53  (22s)
+[05:04:54]   A_b3_q00012                  fps=  56.10 ratio=7.440 rmse=32.70 psnr12=41.95  (22s)
+[05:05:15]   A_b3_q00016                  fps=  55.80 ratio=7.460 rmse=32.70 psnr12=41.95  (22s)
+[05:05:37]   A_b3_q00024                  fps=  55.50 ratio=7.496 rmse=32.80 psnr12=41.93  (22s)
+[05:05:37]   .. A_b3_q00024: spread 4.200 too wide, re-measuring
+[05:06:00]   A_b3_q00024_rm               fps=  40.10 ratio=7.496  (22s)
+[05:06:24]   A_b3_q00032                  fps=  36.70 ratio=7.512 rmse=32.90 psnr12=41.90  (24s)
+[05:06:24]   .. A_b3_q00032: spread 20.600 too wide, re-measuring
+[05:06:45]   A_b3_q00032_rm               fps=  57.90 ratio=7.512  (21s)
+[05:07:07]   A_b3_q00048                  fps=  58.50 ratio=7.545 rmse=33.30 psnr12=41.80  (22s)
+[05:07:29]   A_b3_q32767                  fps=  47.40 ratio=7.625 rmse=41.30 psnr12=39.93  (22s)
+[05:07:29]   .. A_b3_q32767: spread 8.800 too wide, re-measuring
+[05:07:51]   A_b3_q32767_rm               fps=  54.50 ratio=7.625  (21s)
+[05:08:13]   A_b4_q00039                  fps=  55.70 ratio=7.524 rmse=32.90 psnr12=41.90  (22s)
+[05:08:35]   A_b4_q00052                  fps=  60.90 ratio=7.601 rmse=33.20 psnr12=41.82  (22s)
+[05:08:56]   A_ctl_020                    fps=  62.40 ratio=7.389 rmse=32.60 psnr12=41.98  (22s)
+[05:09:18]   A_b4_q00078                  fps=  63.30 ratio=7.717 rmse=34.10 psnr12=41.59  (22s)
+[05:09:40]   A_b4_q00104                  fps=  63.90 ratio=7.809 rmse=35.00 psnr12=41.36  (22s)
+[05:10:02]   A_b4_q00156                  fps=  63.90 ratio=7.936 rmse=36.20 psnr12=41.07  (22s)
+[05:10:24]   A_b4_q32767                  fps=  64.80 ratio=8.100 rmse=51.10 psnr12=38.08  (22s)
+[05:10:45]   A_b5_q00039                  fps=  62.40 ratio=7.537 rmse=32.90 psnr12=41.90  (22s)
+[05:11:07]   A_b5_q00052                  fps=  62.70 ratio=7.623 rmse=33.30 psnr12=41.80  (22s)
+[05:11:29]   A_b5_q00078                  fps=  63.60 ratio=7.747 rmse=34.20 psnr12=41.56  (22s)
+[05:11:51]   A_b5_q00104                  fps=  63.30 ratio=7.845 rmse=35.20 psnr12=41.31  (22s)
+[05:12:13]   A_b5_q00156                  fps=  64.20 ratio=7.985 rmse=36.80 psnr12=40.93  (22s)
+[05:12:34]   A_b5_q32767                  fps=  65.40 ratio=8.207 rmse=61.00 psnr12=36.54  (22s)
+[05:12:56]   A_ctl_030                    fps=  62.10 ratio=7.389 rmse=32.60 psnr12=41.98  (22s)
+[05:13:18]   A_b6_q00027                  fps=  55.50 ratio=7.546 rmse=32.80 psnr12=41.93  (22s)
+[05:13:18]   .. A_b6_q00027: spread 6.600 too wide, re-measuring
+[05:13:39]   A_b6_q00027_rm               fps=  57.00 ratio=7.546  (21s)
+[05:14:01]   A_b6_q00036                  fps=  59.10 ratio=7.628 rmse=32.90 psnr12=41.90  (22s)
+[05:14:23]   A_b6_q00054                  fps=  58.40 ratio=7.738 rmse=33.40 psnr12=41.77  (22s)
+[05:14:45]   A_b6_q00072                  fps=  59.40 ratio=7.819 rmse=34.00 psnr12=41.62  (22s)
+[05:15:07]   A_b6_q00108                  fps=  57.30 ratio=7.954 rmse=35.00 psnr12=41.36  (22s)
+[05:15:29]   A_b6_q32767                  fps=  60.00 ratio=8.191 rmse=38.90 psnr12=40.45  (22s)
+[05:15:51]   A_b7_q00189                  fps=  60.30 ratio=7.876 rmse=36.10 psnr12=41.09  (22s)
+[05:16:13]   A_b7_q00252                  fps=  57.60 ratio=8.289 rmse=38.10 psnr12=40.63  (22s)
+[05:16:13]   .. A_b7_q00252: spread 4.800 too wide, re-measuring
+[05:16:34]   A_b7_q00252_rm               fps=  66.30 ratio=8.289  (21s)
+[05:16:56]   A_b7_q00378                  fps=  64.10 ratio=8.767 rmse=39.30 psnr12=40.36  (22s)
+[05:16:56]   .. A_b7_q00378: spread 9.800 too wide, re-measuring
+[05:17:17]   A_b7_q00378_rm               fps=  53.30 ratio=8.767  (21s)
+[05:17:39]   A_b7_q00504                  fps=  59.80 ratio=8.897 rmse=39.90 psnr12=40.23  (22s)
+[05:17:39]   .. A_b7_q00504: spread 8.800 too wide, re-measuring
+[05:18:00]   A_b7_q00504_rm               fps=  60.90 ratio=8.897  (21s)
+[05:18:22]   A_ctl_040                    fps=  55.10 ratio=7.389 rmse=32.60 psnr12=41.98  (22s)
+[05:18:44]   A_b7_q00756                  fps=  61.50 ratio=8.961 rmse=40.70 psnr12=40.05  (22s)
+[05:19:06]   A_b7_q32767                  fps=  58.50 ratio=8.996 rmse=42.50 psnr12=39.68  (22s)
+[05:19:06]   .. A_b7_q32767: spread 7.800 too wide, re-measuring
+[05:19:27]   A_b7_q32767_rm               fps=  62.10 ratio=8.996  (21s)
+[05:19:49]   A_b8_q00189                  fps=  57.60 ratio=7.885 rmse=36.50 psnr12=41.00  (22s)
+[05:20:11]   A_b8_q00252                  fps=  59.40 ratio=8.318 rmse=39.00 psnr12=40.42  (22s)
+[05:20:33]   A_b8_q00378                  fps=  59.10 ratio=8.850 rmse=41.20 psnr12=39.95  (22s)
+[05:20:33]   .. A_b8_q00378: spread 6.600 too wide, re-measuring
+[05:20:55]   A_b8_q00378_rm               fps=  62.70 ratio=8.850  (21s)
+[05:21:16]   A_b8_q00504                  fps=  63.50 ratio=9.012 rmse=42.80 psnr12=39.62  (22s)
+[05:21:16]   .. A_b8_q00504: spread 6.200 too wide, re-measuring
+[05:21:38]   A_b8_q00504_rm               fps=  69.60 ratio=9.012  (21s)
+[05:21:59]   A_b8_q00756                  fps=  66.30 ratio=9.115 rmse=45.20 psnr12=39.14  (22s)
+[05:22:21]   A_b8_q32767                  fps=  62.60 ratio=9.192 rmse=49.30 psnr12=38.39  (22s)
+[05:22:43]   A_b9_q00262                  fps=  62.60 ratio=7.920 rmse=34.80 psnr12=41.41  (22s)
+[05:22:43]   .. A_b9_q00262: spread 5.600 too wide, re-measuring
+[05:23:04]   A_b9_q00262_rm               fps=  61.90 ratio=7.920  (21s)
+[05:23:26]   A_b9_q00350                  fps=  63.30 ratio=8.231 rmse=34.90 psnr12=41.39  (22s)
+[05:23:26]   .. A_b9_q00350: spread 5.400 too wide, re-measuring
+[05:23:47]   A_b9_q00350_rm               fps=  66.30 ratio=8.231  (21s)
+[05:24:09]   A_ctl_050                    fps=  62.70 ratio=7.389 rmse=32.60 psnr12=41.98  (22s)
+[05:24:31]   A_b9_q00525                  fps=  67.80 ratio=8.354 rmse=34.70 psnr12=41.44  (22s)
+[05:24:53]   A_b9_q00700                  fps=  68.10 ratio=8.362 rmse=34.80 psnr12=41.41  (21s)
+[05:25:14]   A_b9_q01050                  fps=  67.80 ratio=8.364 rmse=34.80 psnr12=41.41  (22s)
+[05:25:36]   A_b9_q32767                  fps=  67.50 ratio=8.364 rmse=34.80 psnr12=41.41  (22s)
+[05:25:36] Stage A complete: 71 new cells
