@@ -1,0 +1,111 @@
+name: build
+
+# Compile-only. This exists to catch AArch64 build breaks, which are invisible
+# from a working development machine and obvious to everyone else.
+#
+# It deliberately does NOT run the benchmark. Shared CI runners have unknown
+# and varying memory bandwidth, which is the exact resource this encoder is
+# limited by, so any number produced here would be meaningless — and worse,
+# tempting to believe. Performance claims are made on real hardware, matched
+# A/B, per CONTRIBUTING.md.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  aarch64:
+    name: AArch64 compile
+    runs-on: ubuntu-24.04-arm
+
+    steps:
+      - name: Check out with submodule
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            build-essential cmake pkg-config libvulkan-dev
+
+      - name: Build the GPR SDK
+        working-directory: benchmark/third_party/gpr
+        run: |
+          cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+          cmake --build build -j"$(nproc)"
+
+      - name: Compile the encoder core
+        run: |
+          # Compile only — no install, no sudo, no system prefix. The build
+          # script installs to /opt, which is not what CI should be checking.
+          g++ -std=c++17 -O2 -c \
+            -I encoder_library \
+            -I benchmark/cinepi_qraw_bench \
+            -I benchmark/cinepi_qraw_bench/deps/vulkan-headers-1.3.290 \
+            -I benchmark/third_party/gpr/source/lib/gpr_sdk/public \
+            -I benchmark/third_party/gpr/source/lib/common/public \
+            -I benchmark/third_party/gpr/source/lib/vc5_common \
+            -I benchmark/third_party/gpr/source/lib/vc5_encoder \
+            -I benchmark/third_party/gpr/source/lib/vc5_decoder \
+            -I benchmark/third_party/gpr/source/lib/dng_sdk \
+            encoder_library/cinepi_qraw_encoder.cpp \
+            -o /tmp/cinepi_qraw_encoder.o
+          ls -l /tmp/cinepi_qraw_encoder.o
+
+  hygiene:
+    name: Repository hygiene
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Shell syntax
+        run: |
+          fail=0
+          while IFS= read -r f; do
+            bash -n "$f" || { echo "SYNTAX: $f"; fail=1; }
+          done < <(find . -name '*.sh' -not -path './benchmark/third_party/*')
+          exit $fail
+
+      - name: Python syntax
+        run: |
+          fail=0
+          while IFS= read -r f; do
+            python3 -m py_compile "$f" || { echo "SYNTAX: $f"; fail=1; }
+          done < <(find . -name '*.py' -not -path './benchmark/third_party/*')
+          exit $fail
+
+      - name: No build artefacts or large files committed
+        run: |
+          fail=0
+          if find . -path ./.git -prune -o \
+               \( -name '*.o' -o -name '*.a' -o -name '*.raw16' \) -print \
+               | grep -q .; then
+            echo "Build artefacts or raw samples are committed:"
+            find . -path ./.git -prune -o \
+              \( -name '*.o' -o -name '*.a' -o -name '*.raw16' \) -print
+            fail=1
+          fi
+          big=$(find . -path ./.git -prune -o -type f -size +1M -print)
+          if [ -n "$big" ]; then
+            echo "Files over 1 MB (release assets belong in a Release):"
+            echo "$big"
+            fail=1
+          fi
+          exit $fail
+
+      - name: SPDX headers present on first-party sources
+        run: |
+          missing=0
+          while IFS= read -r f; do
+            head -c 400 "$f" | grep -q 'SPDX-License-Identifier' \
+              || { echo "no SPDX header: $f"; missing=1; }
+          done < <(find encoder_library tools -type f \
+                     \( -name '*.c' -o -name '*.cpp' -o -name '*.h' \
+                        -o -name '*.hpp' -o -name '*.py' -o -name '*.sh' \))
+          exit $missing

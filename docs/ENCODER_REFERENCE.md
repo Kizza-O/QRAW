@@ -1,6 +1,7 @@
 # QRAW Encoder Reference
 
-Platform, the quality levers, the mode ladder, and the option surface.
+Platform, the quality levers, the mode ladder, and the option surface. For the
+shape of the pipeline itself, read `ARCHITECTURE.md` first.
 Everything here was read out of the shipped source rather than from earlier
 notes.
 
