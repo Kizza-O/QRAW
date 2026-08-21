@@ -27,8 +27,14 @@ at this operating point, which is why most of the optimisation work was about
 moving fewer bytes and why the architecture matters at all. The RK3588 is the
 interesting next target for exactly that reason.
 
-x86-64 builds and runs, which is useful for checking correctness. No figure in
-`docs/` was measured there.
+**AArch64 is a hard requirement, not a preference.** There is no x86 build at
+present: `cpu_quantize_pc`, the scalar tail of the Pixel Clean quantiser, is
+defined inside `#if CINEPI_HAVE_NEON_WAVELET` but called from outside it, so a
+non-NEON target fails to compile. The function itself is plain scalar C++ and
+nothing about it needs NEON — moving the definition out of the guard would
+restore an x86 build, at the cost of re-pinning the encoder hash. Recorded here
+rather than fixed silently, because the pin is the thing that makes the
+correctness gates meaningful.
 
 ---
 

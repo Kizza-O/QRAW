@@ -109,8 +109,11 @@ with `-mcpu=cortex-a76 -flto=auto`. The sensor here is an IMX585, but any
 The Pi is the test rig, not a requirement. What the encoder actually needs is
 NEON, four cores and memory bandwidth. Other AArch64 parts should work, and the
 RK3588 is the interesting one, since it has roughly twice the bandwidth and
-bandwidth is the ceiling. It builds and runs on x86-64 too, which is useful for
-checking correctness, but nothing in `docs/` was measured there.
+bandwidth is the ceiling.
+
+AArch64 is currently a hard requirement, not a preference: parts of the
+quantiser live inside a NEON guard and the encoder does not compile without it.
+There is no x86 build today.
 
 ---
 
