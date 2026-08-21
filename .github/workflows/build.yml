@@ -53,6 +53,7 @@ jobs:
             -I benchmark/third_party/gpr/source/lib/vc5_encoder \
             -I benchmark/third_party/gpr/source/lib/vc5_decoder \
             -I benchmark/third_party/gpr/source/lib/dng_sdk \
+            -I benchmark/third_party/gpr/source/app/gpr_tools \
             encoder_library/cinepi_qraw_encoder.cpp \
             -o /tmp/cinepi_qraw_encoder.o
           ls -l /tmp/cinepi_qraw_encoder.o
