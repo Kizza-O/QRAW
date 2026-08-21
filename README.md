@@ -1,7 +1,7 @@
 <p align="left">
   <img src="docs/qraw-logo.png" alt="QRAW" width="120">
 </p>
-# QRAW: Optimised VC-5/GPR For ARM
+## QRAW: Optimised VC-5/GPR For ARM
 
 A RAW video encoder for ARM. It takes Bayer frames from a sensor and writes
 `.gpr` files fast enough to keep up with a camera, on a Raspberry Pi 5, using
