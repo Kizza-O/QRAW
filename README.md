@@ -1,4 +1,4 @@
-<p align="center">
+<p align="left">
   <img src="docs/qraw-logo.png" alt="QRAW" width="120">
 </p>
 # QRAW: Optimised VC-5/GPR For ARM
